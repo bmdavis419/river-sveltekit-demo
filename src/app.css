@@ -1,6 +1,10 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/typography';
 
+body  {
+	@apply bg-neutral-900 text-neutral-50;
+}
+
 @theme {
 	--color-primary: #f97316;
 	--color-neutral-50: #fafafa;
