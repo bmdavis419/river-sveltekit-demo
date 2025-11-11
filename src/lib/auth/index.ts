@@ -1,7 +1,7 @@
 import { env } from '$env/dynamic/private';
 import type { RequestEvent } from '@sveltejs/kit';
 
-export const checkAuthStatus = async (event: RequestEvent) => {
+export const checkAuthStatus = (event: RequestEvent) => {
 	const { cookies } = event;
 
 	const userSavedPassword = cookies.get('user-saved-password');
